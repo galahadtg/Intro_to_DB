@@ -1,5 +1,5 @@
 -- Script: task_4.sql
--- Prints the full description of the table 'books' from the database passed as argument
+-- Prints the full description of the table 'Books' from the database passed as argument
 
 SELECT COLUMN_NAME,
        COLUMN_TYPE,
@@ -8,5 +8,5 @@ SELECT COLUMN_NAME,
        COLUMN_DEFAULT,
        EXTRA
 FROM INFORMATION_SCHEMA.COLUMNS
-WHERE TABLE_NAME = 'books'
-  AND TABLE_SCHEMA = 'alx_book_store';
+WHERE TABLE_SCHEMA = 'alx_book_store'
+  AND TABLE_NAME = 'Books';
